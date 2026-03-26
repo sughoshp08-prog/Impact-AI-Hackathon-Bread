@@ -505,6 +505,24 @@ hr { border-color: var(--border) !important; }
 API_BASE = "http://localhost:8000/api/v1"
 
 
+# --- Connectivity Check ---
+def check_api_health():
+    try:
+        # FastAPI usually has a default 404 or root response
+        response = requests.get(f"{API_BASE}/", timeout=5)
+        if response.status_code < 500:
+            return True
+    except:
+        return False
+
+with st.sidebar:
+    st.markdown("---")
+    if check_api_health():
+        st.success("● API Connected", icon="✅")
+    else:
+        st.error("○ API Offline", icon="🚨")
+        st.info(f"Checking: {API_BASE}")
+
 # ─── Helpers ──────────────────────────────────────────────────────────────────
 def bmi_color(bmi):
     if bmi < 18.5: return "#5B8DEF"
