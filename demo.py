@@ -33,7 +33,7 @@ app.add_middleware(
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 # ─── 3. Model Loading ─────────────────────────────────────────────────────────
-MODEL_PATH = r"C:\Users\sugho\AppData\Local\Programs\Python\Python313\Scripts\model_joblib.pkl"
+MODEL_PATH = os.path.join(os.getcwd(), "model_joblib.pkl")
 _regression_model = None
 if os.path.exists(MODEL_PATH):
     try:
