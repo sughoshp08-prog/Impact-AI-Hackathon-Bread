@@ -1,2 +1,8 @@
-streamlit
-requests
+fastapi
+uvicorn
+pydantic
+google-genai
+python-dotenv
+numpy
+joblib
+scikit-learn
