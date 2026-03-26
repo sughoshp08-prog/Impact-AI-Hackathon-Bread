@@ -34,7 +34,7 @@ client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 # ─── 3. Model Loading ─────────────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "model_joblib.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "weight_change_predictor.pkl")
 
 _regression_model = None
 if os.path.exists(MODEL_PATH):
