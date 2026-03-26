@@ -502,7 +502,7 @@ hr { border-color: var(--border) !important; }
 
 
 # ─── Config ───────────────────────────────────────────────────────────────────
-API_BASE = "http://localhost:8000/api/v1"
+API_BASE = "https://impact-ai-hackathon-bread-backend.onrender.com"
 
 
 # --- Connectivity Check ---
