@@ -678,7 +678,8 @@ with tab1:
                 "weight_kg": weight, "height_cm": height
             }
             with st.spinner("Running classifier..."):
-                result, err = call_api("classify", payload)
+                # ---- FIXED ENDPOINT HERE ----
+                result, err = call_api("api/v1/classify", payload)
 
             if err:
                 st.markdown(f"<div class='warn-box'>{err}</div>", unsafe_allow_html=True)
@@ -767,7 +768,8 @@ with tab2:
         }
 
         with st.spinner("We are cooking up your personalised plan..."):
-            result, err = call_api("nutrition-plan", payload)
+            # ---- FIXED ENDPOINT HERE ----
+            result, err = call_api("api/v1/nutrition-plan", payload)
 
         if err:
             st.markdown(f"<div class='warn-box'>{err}</div>", unsafe_allow_html=True)
@@ -904,7 +906,8 @@ with tab3:
         }
 
         with st.spinner("🔬 Running analysis..."):
-            result, err = call_api("full-analysis", payload)
+            # ---- FIXED ENDPOINT HERE ----
+            result, err = call_api("api/v1/full-analysis", payload)
 
         if err:
             st.markdown(f"<div class='warn-box'>{err}</div>", unsafe_allow_html=True)
