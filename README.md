@@ -1,7 +1,9 @@
 # 🥗 Salad Tastes Better
 **AI-Powered Indian Nutrition Coach**  
 **Team:** Bread Tastes Better • Impact AI Hackathon
-
+View demo version here deployed on render
+Backend and RandomForest : https://impact-ai-hackathon-bread-backend.onrender.com
+Frontend : https://impact-ai-hackathon-bread.onrender.com
 
 ## 📋 Project Overview
 - **Solution:** Salad Tastes Better
