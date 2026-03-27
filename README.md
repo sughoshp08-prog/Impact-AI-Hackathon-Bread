@@ -145,5 +145,3 @@ python frontend.py
 Built by **Bread Tastes Better** for the Impact AI Hackathon — democratizing access to high-quality nutrition advice for India.
 
 ---
-
-If you want a different structure, more technical details or more user-focused documentation, let me know!
