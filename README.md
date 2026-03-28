@@ -4,6 +4,7 @@
 View demo version here deployed on render
 Backend and RandomForest : https://impact-ai-hackathon-bread-backend.onrender.com
 Frontend : https://impact-ai-hackathon-bread.onrender.com
+(If frontend does not load properly, open backend link and let it load first)
 
 ## 📋 Project Overview
 - **Solution:** Salad Tastes Better
